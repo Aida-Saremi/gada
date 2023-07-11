@@ -29,20 +29,29 @@ Variables
 Global Styles 
 ======
 */
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--mainBlack);
   background: var(--mainBackground);
   line-height: 1.4;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 300;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background: var(--clr-grey-10);
+color: var(--clr-grey-1);
+line-height: 1.5;
+font-size: 0.875rem;
+
 }
 h1,
 h2,
@@ -127,47 +136,7 @@ Buttons
   border-color: var(--primaryLightColor);
 }
 /* 
-====== 
-Navbar
-======
-*/
-.navbar {
-  background: var(--mainWhite);
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
-  box-shadow: var(--lightShadow);
-}
-.nav-center {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: var(--smallWidth);
-  margin: 0 auto;
-  max-width: var(--fullWidth);
-}
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-.nav-links a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
-  transition: var(--mainTransition);
-}
-.nav-links a:hover {
-  color: var(--primaryColor);
-}
-.logo {
-  width: 12rem;
-}
+
 /* 
 ====== 
 About
@@ -550,6 +519,7 @@ Sidebar
 }
 .show-sidebar {
   transform: translate(0);
+  z-index: 10 !important;
 }
 @media screen and (min-width: 676px) {
   .sidebar {

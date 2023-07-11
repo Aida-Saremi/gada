@@ -4,7 +4,7 @@ import Cocktail from './Cocktail'
 import { useGlobalContext } from '../context'
 
 export default function CocktailList() {
-  const { cocktails, loading } = useGlobalContext()
+  const { cocktails} = useGlobalContext()
  
   
   return (

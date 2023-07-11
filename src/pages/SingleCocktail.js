@@ -4,11 +4,11 @@ import { useParams, Link } from 'react-router-dom'
 
 export default function SingleCocktail() {
   const { id } = useParams()
-  const [loading, setLoading] = React.useState(false)
+ 
   const [cocktail, setCocktail] = React.useState(null)
 
   React.useEffect(() => {
-    setLoading(true)
+   
     async function getCocktail() {
       try {
         const response = await fetch(
@@ -52,7 +52,7 @@ export default function SingleCocktail() {
       } catch (error) {
         console.log(error)
       }
-      setLoading(false)
+      
     }
     getCocktail()
   }, [id])

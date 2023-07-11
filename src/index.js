@@ -10,9 +10,7 @@ root.render(
   <React.StrictMode>
     <AppProvider>
     <AppProviders>
-    <App>
-      <Sidebar/>
-    </App>
+    <App/>
     </AppProviders>
     </AppProvider>
   </React.StrictMode>
