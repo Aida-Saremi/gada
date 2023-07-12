@@ -1,7 +1,8 @@
 import React from 'react'
+import CocktailList from '../components/CocktailList'
 import { FaBars } from 'react-icons/fa';
-
-export default function Home() {
+import { useGlobalContexts } from '../components/contexts';
+export default function Portfolio() {
   const { openSidebar } = useGlobalContexts();
   return (
     <main>
