@@ -5,7 +5,6 @@ import { useGlobalContext } from '../context'
 
 export default function CocktailList() {
   const { cocktails} = useGlobalContext()
- 
   
   return (
     <section className='section'>

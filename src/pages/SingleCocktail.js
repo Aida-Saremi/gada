@@ -100,7 +100,6 @@ export default function SingleCocktail() {
             <p>
               <span className='drink-data'>instructons :</span> {instructions}
             </p>
-           
           </div>
         </div>
       </section>
